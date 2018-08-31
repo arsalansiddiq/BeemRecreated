@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".activities.SalesActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/txtView_recordsSent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/record_sent"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txtView_recordsSent_count"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearLayout_pending"
+        android:id="@+id/linearLayout_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtView_recordsPending"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/record_pending"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/txtView_recordsSent"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtView_recordsPending_count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_information"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edtText_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/edtText_email"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:hint="Email"/>
+
+            <EditText
+                android:id="@+id/edtText_contact"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:maxLength="13"
+                android:layout_margin="5dp"
+                android:hint="Contact No"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linearLayout_information"
+            android:id="@+id/linearLayout_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtView_gender"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Gender"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txtView_recordsSent"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+            </Spinner>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearLayout_gender"
+        android:id="@+id/linearLayout_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtView_age"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Age"
+            android:textSize="15sp"
+            android:layout_below="@+id/txtView_recordsSent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner_age"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearLayout_age"
+        android:id="@+id/linearLayout_pBrands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtView_pBrands"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:text="Previous Brand"
+            android:layout_below="@+id/txtView_recordsSent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner_pBrand"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linearLayout_pBrands"
+        android:id="@+id/linearLayout_cBrands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtView_cBrands"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Current Brand"
+            android:layout_below="@+id/txtView_recordsSent"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner_cBrand"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        </Spinner>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_next"
+        android:onClick="onNext"
+        android:textSize="18dp"
+        android:text="Next"/>
+
+
+</RelativeLayout>

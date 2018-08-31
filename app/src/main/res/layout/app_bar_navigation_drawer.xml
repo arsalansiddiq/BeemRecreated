@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NavigationDrawerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_navigation_drawer" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        fab:menu_colorNormal="@color/colorBlue"
+        android:layout_margin="@dimen/fab_margin">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_startBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_send"
+            app:fab_size="mini"
+            fab:fab_label="Start Break"
+            app:fab_colorNormal="@color/colorBlue" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_endDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_send"
+            app:fab_size="mini"
+            fab:fab_label="End Day"
+            app:fab_colorNormal="@color/colorBlue" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_send"
+            app:fab_size="mini"
+            fab:fab_label="Sale"
+            app:fab_colorNormal="@color/colorBlue" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_attandance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_camera"
+            app:fab_size="mini"
+            fab:fab_label="Mark Attandance"
+            app:fab_colorNormal="@color/colorBlue" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_manage"
+            app:fab_size="mini"
+            fab:fab_label="Target and achievements"
+            app:fab_colorNormal="@color/colorBlue" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_share"
+            app:fab_size="mini"
+            fab:fab_label="Map"
+            app:fab_colorNormal="@color/colorBlue" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"/>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

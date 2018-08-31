@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">-->
+
+    <!--<item-->
+        <!--android:id="@+id/nav_startBreak"-->
+        <!--android:icon="@drawable/ic_menu_send"-->
+        <!--android:title="Start Break" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/nav_endDay"-->
+        <!--android:icon="@drawable/ic_menu_send"-->
+        <!--android:title="End Day" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/nav_sale"-->
+        <!--android:icon="@drawable/ic_menu_send"-->
+        <!--android:title="Sale" />-->
+
+
+        <item
+            android:id="@+id/nav_attandance"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Mark Attandance" />
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Gallery" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <item
+            android:id="@+id/nav_target"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Target and Achievements" />
+    <!--</group>-->
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Map" />
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

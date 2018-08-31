@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout_listItems"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtView_brandImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtView_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/record_sent"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/checkbox_loose"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="is loose out of stock"
+                android:layout_gravity="left"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:id="@+id/checkbox_carton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="is carton out of stock"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtView_recordsSent_count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Enter Quantity"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Loose"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Carton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edtText_loose"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtText_carton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
